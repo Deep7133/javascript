@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    .form-container {
-      max-width: 500px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-    h2 {
-      text-align: center;
-      color: #444;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    input, select, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      margin-top: 15px;
-      background-color: #5cb85c;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #4cae4c;
-    }
-  </style>
-</head>
-<body>
-  <div class="form-container">
-    <h2>Feedback Form</h2>
-    <form id="feedbackForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>render</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter your email">
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #f8f9fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-      <label for="division">Division:</label>
-      <select id="division">
-        <option value="">--Select Division--</option>
-        <option value="6ITA">6ITA</option>
-        <option value="6ITB">6ITB</option>
-        <option value="6ITC">6ITC</option>
-        <option value="6ITD">6ITD</option>
-      </select>
+h1 {
+  font-size: 2.5rem;
+  color: #48b14f;
+  margin-bottom: 1rem;
+}
 
-      <label for="feedback">Feedback:</label>
-      <textarea id="feedback" rows="5" placeholder="Enter your feedback"></textarea>
+#t-1 {
+  width: 60%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-      <button type="button" onclick="submitFeedback()">Submit</button>
-    </form>
-  </div>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
 
-  <script src="script.js">
-  </script>
-</body>
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #48b14f;
+  color: white;
+  text-transform: uppercase;
+}
+
+td a {
+  text-decoration: none;
+  color: #31bf60;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+td a:hover {
+  color: #7ce228;
+  text-decoration: underline;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+tr:hover {
+  background-color: #e9ecef; 
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <div id="t-1">
+      <table border="2px">
+        <thead>
+          <th>Task</th>
+          <th>Link</th>
+        </thead>
+        <tr>
+          <td>Resume</td>
+          <td>
+            <a href="hi.html">Click here</a>
+          </td>
+        </tr>
+        <tr>
+          <td>feedback</td>
+          <td>
+            <a href="hiii.html">Click here</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>

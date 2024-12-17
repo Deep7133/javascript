@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #343a40;
+  }
+  
+  .resume {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .resume:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.7rem;
+    color: #007BFF;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+  
+  .contact a {
+    margin: 0 12px;
+    color: #007BFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .contact a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-5px);
+  }
+  
+  ul li h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #343a40;
+    font-weight: 600;
+  }
+  
+  ul li p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+</style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <h1 id="name">Deep Menpara</h1>
+      <div class="contact">
+        <a href="mailto:deepmenpara9@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+91 8160502805" title="Phone">
+          <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://github.com/Deep7133" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </header>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3 id="Unen">Post Graduation</h3>
+          <p id="Unname">Parul University, 2022 - Present</p>
+        </li>
+        <li>
+          <h3 id="scen">School</h3>
+          <p id="scname">Modi school</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3 id="p1">Sales analysis</h3>
+          <p id="p1d">A Sales Analysis project involves analyzing sales data to identify trends, patterns, and insights that can help businesses optimize pricing, improve marketing strategies, and enhance overall sales performance.</p>
+        </li>
+        <li>
+          <h3 id="p2">Employee management</h3>
+          <p id="p2d">An Employee Management System project is a software solution that helps businesses manage employee data, including personal information, attendance, payroll, performance, and leave management.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script src="scriptt.js"></script>
+</body>
+</html>

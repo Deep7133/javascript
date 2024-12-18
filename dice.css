@@ -1,0 +1,71 @@
+body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #ff7eb3, #8ec5fc);
+    }
+    .dice.hidden span {
+      visibility: hidden;
+    }
+    .dice-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 200px; 
+    }
+    .dice-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .player-label {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .dice {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform-origin: center;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 30px;
+      font-size: 1rem;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    @keyframes rollDiceAnimation {
+      0% {
+        transform: rotate(0) scale(1);
+      }
+      25% {
+        transform: rotate(90deg) scale(1.2);
+      }
+      50% {
+        transform: rotate(180deg) scale(1);
+      }
+      75% {
+        transform: rotate(270deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+      }
+    }
+    
+    

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="pwd.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random Password Generator</h1>
+    <div class="password-display" id="passwordDisplay">Your Password</div>
+    <div class="btn-group">
+      <button class="btn" id="uppercase">Uppercase</button>
+      <button class="btn" id="lowercase">Lowercase</button>
+      <button class="btn" id="digits">Digits</button>
+      <button class="btn" id="specialChars">Special Characters</button>
+    </div>
+    <input class="length-input" id="lengthInput" type="number" value="12" min="4" max="20">
+    <button class="generate-btn" id="generateBtn">Generate Password</button>
+  </div>
+
+  <script src="pwd.js">
+  </script>
+</body>
+</html>
